@@ -58,6 +58,7 @@ List* get_adj_nodes(Node* n){
          if(n->sudo[i][j] == 0){
             Node* adj = n;
             pushBack(list,adj);
+            n->sudo[i][j] = 1;
          }  
       }   
    }
