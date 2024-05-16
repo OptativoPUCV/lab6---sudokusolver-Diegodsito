@@ -45,7 +45,7 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
-   for(int i = 0 ; i < 9 ; i++){
+   for(int i = 0 ; i < 9 ; i++){ //Verificacion filas y columnas
       for(int j = 0 ; j < 9 ; j++){
          if(n->sudo[i][j] == 0) continue;
          for(int k = 0 ; k < 9 ; k++){
@@ -56,7 +56,21 @@ int is_valid(Node* n){
             if(i == k) continue;
             if(n->sudo[k][j] == n->sudo[i][j]) return 0;
          }
+         
+         int k = n->sudo[i][j]; 
+         for(int p = 0 ; p < 9 ; p++){
+             int i=3*(k/3) + (p/3) ;
+             int j=3*(k%3) + (p%3) ;
+            if(p%3 == 2) continue;
+            if(n->sudo[i][j] == n->sudo[i][p]) return 0;
+         }
       }
+   }
+
+   for(int p = 0;p < 9;p++){
+       int i=3*(k/3) + (p/3) ;
+       int j=3*(k%3) + (p%3) ;
+       if(p%3 == 2) printf("\n");
    }
 
     return 1;

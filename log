@@ -82,3 +82,21 @@ Thu 16 May 2024 09:53:23 PM UTC:
  tests:  3|4
 total_score: 20/70
 6512218
+Thu 16 May 2024 10:00:25 PM UTC: 
+ sudoku.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:71:17: error: ‘k’ undeclared (first use in this function)
+   71 |        int i=3*(k/3) + (p/3) ;
+      |                 ^
+sudoku.c:71:17: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:72:12: error: unused variable ‘j’ [-Werror=unused-variable]
+   72 |        int j=3*(k%3) + (p%3) ;
+      |            ^
+sudoku.c:71:12: error: unused variable ‘i’ [-Werror=unused-variable]
+   71 |        int i=3*(k/3) + (p/3) ;
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+d65b8c3
