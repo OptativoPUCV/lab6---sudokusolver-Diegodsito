@@ -136,3 +136,8 @@ sudoku.c:71:12: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 7f762d0
+Thu 16 May 2024 10:02:19 PM UTC: 
+ sudoku.c | 6 ------
+ 1 file changed, 6 deletions(-)
+ tests:  0|0
+8d0df95
