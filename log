@@ -191,3 +191,20 @@ sudoku.c:63:14: error: unused variable ‘x’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5696eb3
+Fri 17 May 2024 08:11:46 PM UTC: 
+ sudoku.c | 8 --------
+ 1 file changed, 8 deletions(-)
+In file included from test.c:5:
+sudoku.c:67:5: error: expected identifier or ‘(’ before ‘return’
+   67 |     return 1;
+      |     ^~~~~~
+sudoku.c:68:1: error: expected identifier or ‘(’ before ‘}’ token
+   68 | }
+      | ^
+sudoku.c: In function ‘is_valid’:
+sudoku.c:65:4: error: control reaches end of non-void function [-Werror=return-type]
+   65 |    }
+      |    ^
+cc1: all warnings being treated as errors
+Compilation failed
+51b6410
