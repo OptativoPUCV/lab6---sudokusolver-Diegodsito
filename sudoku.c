@@ -57,9 +57,26 @@ int is_valid(Node* n){
             if(i == k) continue;
             if(n->sudo[k][j] == n->sudo[i][j]) return 0;
          }
+      }
+   }
 
-         //Verificacion submatriz
+   //Verificacion de submatrices
 
+   for(int k = 0 ; i < 9 ; k++){
+      int inicio_fila = 3 * (k/3);
+      int inicio_col = 3 * (k%3);
+
+      int nums{10} = {0};
+
+      for(int p = 0 ; p < 9 ; p++){
+         int i = inicio_fila + (p / 3);
+         int j = inicio_col + (p % 3);
+         int num = n->sudo[i][j];
+         if(num != 0)
+            if(nums[num] == 1) return 0;
+         else{
+            nums[num] = 1;
+         }
       }
    }
 
