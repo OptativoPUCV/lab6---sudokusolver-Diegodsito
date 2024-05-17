@@ -303,3 +303,14 @@ sudoku.c:105:32: error: ‘j’ undeclared (first use in this function)
 sudoku.c:105:32: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b07a441
+Fri 17 May 2024 08:28:17 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:105:32: error: ‘j’ undeclared (first use in this function)
+  105 |          if(nuevoNodo->sudo[i][j] == num) break;
+      |                                ^
+sudoku.c:105:32: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0ba98f2
