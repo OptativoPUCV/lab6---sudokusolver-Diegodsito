@@ -62,7 +62,7 @@ int is_valid(Node* n){
 
    //Verificacion de submatrices
 
-   for(int k = 0 ; i < 9 ; k++){
+   for(int k = 0 ; k < 9 ; k++){
       int inicio_fila = 3 * (k/3);
       int inicio_col = 3 * (k%3);
 
