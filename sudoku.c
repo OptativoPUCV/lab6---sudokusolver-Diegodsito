@@ -60,7 +60,6 @@ int is_valid(Node* n){
 
          //Verificacion submatriz
 
-         }
       }
    }
 
