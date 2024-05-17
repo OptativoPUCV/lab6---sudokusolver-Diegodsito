@@ -246,3 +246,32 @@ sudoku.c:75:12: error: suggest explicit braces to avoid ambiguous ‘else’ [-W
 cc1: all warnings being treated as errors
 Compilation failed
 212aaa9
+Fri 17 May 2024 08:21:36 PM UTC: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:65:20: error: ‘i’ undeclared (first use in this function)
+   65 |    for(int k = 0 ; i < 9 ; k++){
+      |                    ^
+sudoku.c:65:20: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:69:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   69 |       int nums{10} = {0};
+      |               ^
+sudoku.c:69:16: error: statement with no effect [-Werror=unused-value]
+   69 |       int nums{10} = {0};
+      |                ^~
+sudoku.c:69:18: error: expected ‘;’ before ‘}’ token
+   69 |       int nums{10} = {0};
+      |                  ^
+      |                  ;
+sudoku.c:69:20: error: expected expression before ‘=’ token
+   69 |       int nums{10} = {0};
+      |                    ^
+sudoku.c:76:16: error: ‘nums’ undeclared (first use in this function); did you mean ‘num’?
+   76 |             if(nums[num] == 1) return 0;
+      |                ^~~~
+      |                num
+cc1: all warnings being treated as errors
+Compilation failed
+31f62be

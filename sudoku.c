@@ -72,8 +72,9 @@ int is_valid(Node* n){
          int i = inicio_fila + (p / 3);
          int j = inicio_col + (p % 3);
          int num = n->sudo[i][j];
-         if(num != 0)
+         if(num != 0){
             if(nums[num] == 1) return 0;
+         }
          else{
             nums[num] = 1;
          }
