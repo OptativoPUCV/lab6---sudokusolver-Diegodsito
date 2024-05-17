@@ -47,6 +47,7 @@ int is_valid(Node* n){
 
    for(int i = 0 ; i < 9 ; i++){ //Verificacion filas y columnas
       for(int j = 0 ; j < 9 ; j++){
+         
          if(n->sudo[i][j] == 0) continue;
          for(int k = 0 ; k < 9 ; k++){
             if(k == j) continue;
@@ -62,11 +63,11 @@ int is_valid(Node* n){
          int x = i/3;
          int y = j/3;
          
-         for(int k = 0 ; k < 3 ; k++){
-            for(int l = 0 ; l < 3 ; l++){
-               if(x*3+k == i && y*3+l == j) continue;
-               if(n->sudo[x*3+k][y*3+l] == n->sudo[i][j]) return 0;
-            }
+         int k=4,p; 
+         for(p=0;p<9;p++){
+             int i=3*(k/3) + (p/3) ;
+             int j=3*(k%3) + (p%3) ;
+             if(p%3 == 2) printf("\n");
          }
       }
    }
