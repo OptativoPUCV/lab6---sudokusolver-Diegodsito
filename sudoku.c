@@ -66,7 +66,7 @@ int is_valid(Node* n){
       int inicio_fila = 3 * (k/3);
       int inicio_col = 3 * (k%3);
 
-      int nums{10} = {0};
+      int nums[10] = {0};
 
       for(int p = 0 ; p < 9 ; p++){
          int i = inicio_fila + (p / 3);

@@ -275,3 +275,14 @@ sudoku.c:76:16: error: ‘nums’ undeclared (first use in this function); did y
 cc1: all warnings being treated as errors
 Compilation failed
 31f62be
+Fri 17 May 2024 08:22:47 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:65:20: error: ‘i’ undeclared (first use in this function)
+   65 |    for(int k = 0 ; i < 9 ; k++){
+      |                    ^
+sudoku.c:65:20: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c865359
