@@ -97,8 +97,9 @@ List* get_adj_nodes(Node* n){
          for(j = 0 ; j < 9 ; j++){
             if(nuevoNodo->sudo[i][j] == 0){
                nuevoNodo->sudo[i][j] = num;
+               
                if(is_valid(nuevoNodo)){
-                  pushBack(list, copy(nuevoNodo));
+                  pushBack(list, nuevoNodo);
                   break;
                }
             }
