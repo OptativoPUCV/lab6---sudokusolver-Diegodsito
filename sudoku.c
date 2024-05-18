@@ -104,7 +104,6 @@ List* get_adj_nodes(Node* n){
                }
             }
          }
-         if(nuevoNodo->sudo[i][j] == num) break;
       }
    }
    return list;
