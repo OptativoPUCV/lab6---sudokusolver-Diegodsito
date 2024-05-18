@@ -400,3 +400,17 @@ Sat 18 May 2024 08:43:37 PM UTC:
  tests:  6|2
 total_score: 45/70
 9ffb46d
+Sat 18 May 2024 08:43:46 PM UTC: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:106:31: error: array subscript 9 is above array bounds of ‘int[9]’ [-Werror=array-bounds]
+  106 |          if(nuevoNodo->sudo[i][j] == num) break;
+      |             ~~~~~~~~~~~~~~~~~~^~~
+sudoku.c:7:8: note: while referencing ‘sudo’
+    7 |    int sudo[9][9];
+      |        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d7178ee
