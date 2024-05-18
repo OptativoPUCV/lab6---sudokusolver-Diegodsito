@@ -96,13 +96,15 @@ List* get_adj_nodes(Node* n){
                nuevoNodo->sudo[i][j] = num;
                
                if(is_valid(nuevoNodo)){
-                  pushBack(list, nuevoNodo);
+                  Node* adjNode = copy(nuevoNodo);
+                  pushBack(list, adjNode);
                   break;
                }
                
                nuevoNodo->sudo[i][j] = 0;
             }
          }
+         if(nuevoNodo->sudo[i][j] == num) break;
       }
    }
    return list;
