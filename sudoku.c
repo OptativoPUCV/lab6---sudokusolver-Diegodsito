@@ -99,10 +99,8 @@ List* get_adj_nodes(Node* n){
                   pushBack(list, nuevoNodo);
                   break;
                }
-
-               else{
-                  nuevoNodo->sudo[i][j] = 0;
-               }
+               
+               nuevoNodo->sudo[i][j] = 0;
             }
          }
          if(nuevoNodo->sudo[i][j] == num) break;
