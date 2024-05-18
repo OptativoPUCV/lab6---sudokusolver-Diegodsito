@@ -75,9 +75,6 @@ int is_valid(Node* n){
          if(n->sudo[i][j] != 0){
             if(nums[ n->sudo[i][j]] == 1) return 0;
          }
-         else{
-            nums[ n->sudo[i][j]] = 1;
-         }
       }
    }
 
