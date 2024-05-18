@@ -71,12 +71,12 @@ int is_valid(Node* n){
       for(int p = 0 ; p < 9 ; p++){
          int i = inicio_fila + (p / 3);
          int j = inicio_col + (p % 3);
-         int num = n->sudo[i][j];
-         if(num != 0){
-            if(nums[num] == 1) return 0;
+         
+         if(n->sudo[i][j] != 0){
+            if(nums[ n->sudo[i][j]] == 1) return 0;
          }
          else{
-            nums[num] = 1;
+            nums[ n->sudo[i][j]] = 1;
          }
       }
    }
