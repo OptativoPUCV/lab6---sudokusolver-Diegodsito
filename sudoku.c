@@ -136,15 +136,17 @@ Node* DFS(Node* initial, int* cont){
       
       Node* aux = first(list);
       
-      while(aux){
+      while(aux != NULL){
          push(s, aux);
          aux = next(list);
-         
       }
+      
       free(n);
+      free(list);
       (*cont)++;
    }
-  return NULL;
+   
+   return NULL;
 }
 
 
