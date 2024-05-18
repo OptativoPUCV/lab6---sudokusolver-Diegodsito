@@ -98,7 +98,9 @@ List* get_adj_nodes(Node* n){
                if(is_valid(nuevoNodo)){
                   Node* adjNode = copy(nuevoNodo);
                   pushBack(list, adjNode);
-                  break;
+               }
+               else{
+                  free(nuevoNodo);
                }
             }
          }
