@@ -99,13 +99,11 @@ List* get_adj_nodes(Node* n){
                   Node* adjNode = copy(nuevoNodo);
                   pushBack(list, adjNode);
                }
-               else{
-                  free(nuevoNodo);
-               }
             }
             
          }
       }
+      free(nuevoNodo);
    }
    return list;
 }
